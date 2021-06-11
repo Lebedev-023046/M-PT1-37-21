@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    height: 100px;
+    background-color: rgb(31, 30, 30);
+    justify-content: space-between;
+}
+
+.left-header{
+    width: 80%;
+    color: #fdc;
+    font-size: 60px;
+    margin-left: 70px;
+}
+
+.right-header{
+    width: 20%;
+    margin-right: 40px;
+    color: #fdc;
+    font-size: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+}

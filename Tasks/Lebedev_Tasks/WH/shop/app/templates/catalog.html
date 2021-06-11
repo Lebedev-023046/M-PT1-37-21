@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block right-header %}
+    <div style="margin: 10px; display: inline;"><a  style="color: #fdc;" href="{% url 'add_post' %}">Новый пост</a></div>
+{% endblock %}
+
+{% block container %}
+ {% if Elements %}
+    {% for el in Elements %}
+        <p><b><a style="text-decoration: none; color: black;" href="{% url 'post' el.id %}">Название фирмы-производителя: {{el.Producer_Name}}</a></b></p>
+        <img width="150px" src="{{el.image.url}}">
+        <p>Описание: {{ el.title }}</p>
+        <hr>
+    {% endfor %}
+    {% else %}
+        <p>Товары скоро прибудут на склад!</p>
+    {% endif %}
+    
+{% endblock %}

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+
+    
+}
+
+
+.header{
+    display: flex;
+    height: 70px;
+    background-color: rgb(31, 30, 30);
+    justify-content: space-between;
+}
+
+.left-header{
+    width: 60%;
+    color: #fdc;
+    font-size: 60px;
+    margin-left: 70px;
+}
+
+.right-header{
+    width: 40%;
+    margin-right: 40px;
+    color: #fdc;
+    font-size: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    margin-top: 25px;
+    margin-left: 70px;
+    font-size: 25px;
+}
+
+

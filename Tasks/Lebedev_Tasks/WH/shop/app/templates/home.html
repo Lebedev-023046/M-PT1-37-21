@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Главная страница
+{% endblock %}
+
+
+{% block container %}
+<div style="color: chocolate; text-align: center; vertical-align: middle; margin-top: 15%;">
+    <h1 >Приветствуем вас в нашем магазине!</h1>
+    <p style="margin-top: 3%;"><a style="text-decoration: none; color: chocolate; font-size: 50px; border: 2px solid black; border-radius: 20px; padding: 7px;" href="{% url 'catalog' %}">Каталог</a></p>
+</div>
+
+{% endblock %}
